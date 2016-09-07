@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript Calculator</title>
+		<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono|Source+Code+Pro:200" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css" media="screen">
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="calc-container">
+				<div id="screen-container">
+					<div class="screen-wrapper">
+						<div id="screenSmall" class="screen"></div>
+					</div>
+					<div class="screen-wrapper">
+						<div id="screen" class="screen"></div>
+					</div>
+				</div>
+				<div id="buttons">
+					<button id="sign">+/-</button><button id="sqrt">&radic;</button><button id="sqr">x<sup>2</sup></button><button id="power">x<sup>y</sup></button>
+					<button class="" id="clear">C</button><button id="divide">/</button><button id="multiply">*</button><button id="minus">-</button>
+					<button class="numbers" id="7">7</button><button class="numbers" id="8">8</button><button class="numbers" id="9">9</button><button id="plus">+</button>
+					<button class="numbers" id="4">4</button><button class="numbers" id="5">5</button><button class="numbers" id="6">6</button>
+					<button class="numbers" id="1">1</button><button class="numbers" id="2">2</button><button class="numbers" id="3">3</button><button id="equality">=</button>
+					<button class="numbers" id="zero">0</button><button id="period">.</button>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/accounting.js/0.4.1/accounting.min.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>

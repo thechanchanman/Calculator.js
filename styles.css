@@ -1,0 +1,160 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding-top: 50px;
+  background: #ce4242;
+	background: rgb(246,248,249);
+	background: -moz-linear-gradient(45deg,  rgba(246,248,249,1) 0%, rgba(212,219,217,1) 22%, rgba(212,219,217,1) 23%, rgba(220,229,227,1) 23%, rgba(229,235,238,1) 50%, rgba(215,222,227,1) 50%, rgba(222,228,229,1) 78%, rgba(222,228,229,1) 78%, rgba(239,239,239,1) 78%, rgba(245,247,249,1) 100%);
+	background: -webkit-linear-gradient(45deg,  rgba(246,248,249,1) 0%,rgba(212,219,217,1) 22%,rgba(212,219,217,1) 23%,rgba(220,229,227,1) 23%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 50%,rgba(222,228,229,1) 78%,rgba(222,228,229,1) 78%,rgba(239,239,239,1) 78%,rgba(245,247,249,1) 100%);
+	background: linear-gradient(45deg,  rgba(246,248,249,1) 0%,rgba(212,219,217,1) 22%,rgba(212,219,217,1) 23%,rgba(220,229,227,1) 23%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 50%,rgba(222,228,229,1) 78%,rgba(222,228,229,1) 78%,rgba(239,239,239,1) 78%,rgba(245,247,249,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=1 );
+
+}
+
+#calc-container {
+	width: 100%;
+	max-width: 400px;
+	background: #eaeaea;
+	background: #232733;
+	/*padding: 20px;*/
+	margin: 0 auto;
+	box-shadow: 0px 0px 40px 10px rgba(0,0,0,0.25);
+}
+
+#screen-container {
+	/*background: rgb(226, 226, 226);*/
+	background: rgb(241, 241, 242);
+	/*padding: 20px;
+	margin-bottom: 20px;*/
+	text-align: right;
+	font-family: 'Share Tech Mono', monospace;
+}
+
+.screen-wrapper {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: right;
+	overflow: hidden;
+	white-space: nowrap;
+	padding: 20px;
+}
+
+.screen-wrapper:first-child {
+	/*border-bottom: 1px solid #dadada;
+	min-height: 20px;
+	margin-bottom: 5px;*/
+  min-height: 40px;
+  margin-bottom: 5px;
+  /*background: #7bd0de;
+	border-bottom: 1px solid #69b3bf;*/
+	border-bottom: 2px solid #8fd7e2;
+	background: #95dde8;
+
+	padding: 10px 20px;
+}
+
+.screen {
+	float: right;
+}
+
+#screen {
+	height: 50px;
+	overflow: hidden;
+	font-size: 2em;
+}
+
+#screenSmall {
+	font-size: 0.84em;
+}
+
+button {
+	background: #eaeaea;
+	border: 1px solid transparent;
+	border: 1px solid rgba(247, 247, 247, 0);
+	font-size: 1.7em;
+  color: #333333;
+	cursor: pointer;
+	outline: none;
+	width: 25%;
+  height: 70px;
+  /*margin-bottom: 10px;*/
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 200;
+  color: #aabff1;
+	background: #232733;
+}
+
+button:hover {
+  /*box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+	background: #ececec;
+  border-top: 1px solid #f5f5f5;
+	position: relative;*/
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.25);
+  background: #333a4e;
+  border-top: 1px solid #414a63;
+  position: relative;
+  color: #50c37f;
+}
+
+button:active {
+  background: #f1f1f1;
+	background: #262a38;
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2);
+}
+
+button.active {
+	background: #f1f1f1;
+	background: #262a38;
+	color: #50c37f;
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2);
+	position: relative;
+}
+
+button sup {
+	font-size: 12px;
+  font-weight: 800;
+  position: relative;
+  left: 3px;
+  top: -3px;
+}
+
+button#sqrt {
+	font-family: sans-serif;
+}
+
+button#plus {
+	height: 140px;
+	float: right;
+	/*background: #e2e2e2;*/
+	/*background: #2c3140;*/
+}
+
+button#equality {
+	height: 140px;
+	float: right;
+	/*background: #7bd0de;
+  color: #232733;*/
+}
+
+button#equality:hover {
+	background: #7bd0de;
+	background: #7bde88;
+  color: #232733;
+}
+
+button#zero {
+	width: 50%;
+	/*background: #e6e6e6;*/
+}
+
+button#minus {
+	/*background: #e6e6e6;*/
+}

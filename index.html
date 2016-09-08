@@ -3,12 +3,42 @@
 	<head>
 		<meta charset="utf-8">
 		<title>JavaScript Calculator</title>
-		<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono|Source+Code+Pro:200" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono|Source+Code+Pro:200|Open+Sans:800" rel="stylesheet">
 		<link rel="stylesheet" href="styles.css" media="screen">
 	</head>
 	<body>
 		<div id="wrapper">
 			<div id="calc-container">
+				<div id="menu">
+					<div class="menu-icon-wrapper">
+						<div class="menu-icon" id="menu-icon">
+							<i></i>
+							<i></i>
+							<i></i>
+						</div>
+					</div>
+					<div class="themes">
+						<label for="grid">Grid</label><input type="checkbox" name="grid" value="grid" id="grid">
+						<div class="colors-wrapper">
+							<div id="option-theme-blue">
+								<p>Blue Theme</p>
+								<div id="theme-blue-preview" class="preview">
+									<div class="color-1"></div>
+									<div class="color-2"></div>
+									<div class="color-3"></div>
+								</div>
+							</div>
+							<div id="option-theme-white">
+								<p>White Theme</p>
+								<div id="theme-white-preview" class="preview">
+									<div class="color-1"></div>
+									<div class="color-2"></div>
+									<div class="color-3"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div id="screen-container">
 					<div class="screen-wrapper">
 						<div id="screenSmall" class="screen"></div>
@@ -19,7 +49,7 @@
 				</div>
 				<div id="buttons">
 					<button id="sign">+/-</button><button id="sqrt">&radic;</button><button id="sqr">x<sup>2</sup></button><button id="power">x<sup>y</sup></button>
-					<button class="" id="clear">C</button><button id="divide">/</button><button id="multiply">*</button><button id="minus">-</button>
+					<button id="clear">C</button><button id="divide">/</button><button id="multiply">*</button><button id="minus">-</button>
 					<button class="numbers" id="7">7</button><button class="numbers" id="8">8</button><button class="numbers" id="9">9</button><button id="plus">+</button>
 					<button class="numbers" id="4">4</button><button class="numbers" id="5">5</button><button class="numbers" id="6">6</button>
 					<button class="numbers" id="1">1</button><button class="numbers" id="2">2</button><button class="numbers" id="3">3</button><button id="equality">=</button>

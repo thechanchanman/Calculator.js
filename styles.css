@@ -23,7 +23,6 @@ body {
 	max-width: 400px;
 	background: #eaeaea;
 	background: #232733;
-	/*padding: 20px;*/
 	margin: 0 auto;
 	box-shadow: 0px 0px 40px 10px rgba(0,0,0,0.25);
 	position: relative;
@@ -39,10 +38,7 @@ body {
 
 
 #screen-container {
-	/*background: rgb(226, 226, 226);*/
 	background: rgb(241, 241, 242);
-	/*padding: 20px;
-	margin-bottom: 20px;*/
 	text-align: right;
 	font-family: 'Share Tech Mono', monospace;
 }
@@ -58,13 +54,8 @@ body {
 }
 
 .screen-wrapper:first-child {
-	/*border-bottom: 1px solid #dadada;
-	min-height: 20px;
-	margin-bottom: 5px;*/
   min-height: 40px;
   margin-bottom: 5px;
-  /*background: #7bd0de;
-	border-bottom: 1px solid #69b3bf;*/
 	border-bottom: 2px solid #8fd7e2;
 	background: #95dde8;
 	padding: 5px 20px 5px 50px;
@@ -82,6 +73,7 @@ body {
 
 #screenSmall {
 	font-size: 0.84em;
+	line-height: 2em;
 }
 
 
@@ -99,15 +91,14 @@ button {
 	background: #eaeaea;
 	border: 1px solid transparent;
 	border: 1px solid rgba(247, 247, 247, 0);
-	font-size: 1.7em;
+	font-size: 1.4em;
   color: #333333;
 	cursor: pointer;
 	outline: none;
 	width: 25%;
   height: 70px;
-  /*margin-bottom: 10px;*/
-	font-family: 'Source Code Pro', monospace;
-	font-weight: 200;
+	/*font-family: 'Source Code Pro', monospace;*/
+	/*font-weight: 200;*/
   color: #aabff1;
 	background: #232733;
 	float: left;
@@ -125,6 +116,7 @@ button:active {
   background: #f1f1f1;
 	background: #262a38;
   box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2);
+	border-top: 1px solid #414a63;
 }
 
 button.active {
@@ -133,11 +125,12 @@ button.active {
 	color: #50c37f;
   box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2);
 	position: relative;
+	border-top: 1px solid #414a63;
 }
 
 button sup {
 	font-size: 12px;
-  font-weight: 800;
+  /*font-weight: 800;*/
   position: relative;
   left: 3px;
   top: -3px;
@@ -145,6 +138,11 @@ button sup {
 
 button#sqrt {
 	font-family: sans-serif;
+}
+
+button#sqrt i {
+	border-top: 1px solid;
+  padding: 0 4px;
 }
 
 button#plus {
@@ -267,6 +265,9 @@ input#grid:checked:after {
 #theme-white-preview .color-2 { background: #f7f7f7; }
 #theme-white-preview .color-3 { /* background: #c2fbd4; */ background: #cedde2;}
 
+#theme-candy-preview .color-1 { background: #4e3424; }
+#theme-candy-preview .color-2 { background: #f1ecb5; }
+#theme-candy-preview .color-3 { background: #e04c60; }
 
 .colors-wrapper {
 	border-top: 2px solid #c4cacc;
@@ -311,7 +312,7 @@ input#grid:checked:after {
 	display: block;
 	width: 100%;
 	height: 4px;
-  background: #fff;
+  background: #465a5d;
   border-radius: 2px;
 	transition: all .2s linear;
 }
@@ -340,7 +341,13 @@ input#grid:checked:after {
 }
 
 
-
+.credits {
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 10px;
+  font-size: 0.8em;
+  color: #848d90;
+}
 
 
 /*
@@ -362,7 +369,7 @@ input#grid:checked:after {
 
 .theme-white button {
 	background: #f1f1f2;
-  color: #333333;
+  color: #757180;
 }
 
 .theme-white button:hover {
@@ -372,24 +379,67 @@ input#grid:checked:after {
 
 .theme-white button:active {
 	background: #f8f8f9;
+	border-top: 1px solid #ffffff;
 }
 
 .theme-white button.active {
 	background: #f8f8f9;
+	border-top: 1px solid #ffffff;
 }
 
 .theme-white .screen-wrapper:first-child {
-  /*border-bottom: 2px solid #bbf1cc;
-  background: #c2fbd4;*/
 	border-bottom: 2px solid #bbccd2;
   background: #cedde2;
 }
 
 .theme-white .menu-icon-wrapper {
-	/*background: #a0e0b4;*/
 	background: #bbccd2;
 }
 
 .theme-white .active .menu-icon-wrapper {
+  background: #dce2e4;
+}
+
+
+/* Candy */
+
+.theme-candy #screen-container {
+  background: rgb(241, 236, 181);
+}
+
+.theme-candy .grid button {
+  border: 1px solid rgb(66, 47, 35);
+}
+
+.theme-candy button {
+  background: #4e3424;
+  color: #bda090;
+}
+
+.theme-candy button:hover {
+  background: #63422e;
+  border-top: 1px solid #865b41;
+}
+
+.theme-candy button:active {
+  background: #5d3d2a;
+	border-top: 1px solid #865b41;
+}
+
+.theme-candy button.active {
+  background: #5d3d2a;
+	border-top: 1px solid #865b41;
+}
+
+.theme-candy .screen-wrapper:first-child {
+  border-bottom: 2px solid #d44559;
+  background: #e04c60;
+}
+
+.theme-candy .menu-icon-wrapper {
+  background: #d44559;
+}
+
+.theme-candy .active .menu-icon-wrapper {
   background: #dce2e4;
 }
